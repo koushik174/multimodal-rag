@@ -54,7 +54,7 @@ except ImportError as e:
 DEFAULT_CHROMA_PATH = "data/rag_chroma_db"
 REPO_METADATA_FILE = "data/repo_metadata.json"
 CONVERSATIONS_FILE = "data/conversations.json"
-
+API_KEY = "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"
 # Suppress specific warnings
 logging.getLogger("pdfminer").setLevel(logging.ERROR)
 
