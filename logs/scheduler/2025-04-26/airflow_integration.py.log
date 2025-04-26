@@ -4100,3 +4100,31 @@ Traceback (most recent call last):
 ImportError: cannot import name 'initialize_system' from 'multimodal_rag_system' (unknown location)
 [2025-04-26T18:01:54.407+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_integration.py
 [2025-04-26T18:01:54.441+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_integration.py took 0.211 seconds
+[2025-04-26T18:02:25.294+0000] {processor.py:161} INFO - Started process (PID=1819) to work on /opt/airflow/dags/airflow_integration.py
+[2025-04-26T18:02:25.297+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_integration.py for tasks to queue
+[2025-04-26T18:02:25.301+0000] {logging_mixin.py:188} INFO - [2025-04-26T18:02:25.298+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_integration.py
+[2025-04-26T18:02:25.439+0000] {logging_mixin.py:188} INFO - [2025-04-26T18:02:25.419+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/airflow_integration.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_integration.py", line 18, in <module>
+    from multimodal_rag_system import (
+ImportError: cannot import name 'initialize_system' from 'multimodal_rag_system' (unknown location)
+[2025-04-26T18:02:25.446+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_integration.py
+[2025-04-26T18:02:25.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_integration.py took 0.267 seconds
+[2025-04-26T18:02:56.105+0000] {processor.py:161} INFO - Started process (PID=1824) to work on /opt/airflow/dags/airflow_integration.py
+[2025-04-26T18:02:56.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_integration.py for tasks to queue
+[2025-04-26T18:02:56.111+0000] {logging_mixin.py:188} INFO - [2025-04-26T18:02:56.110+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_integration.py
+[2025-04-26T18:02:56.266+0000] {logging_mixin.py:188} INFO - [2025-04-26T18:02:56.249+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/airflow_integration.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_integration.py", line 18, in <module>
+    from multimodal_rag_system import (
+ImportError: cannot import name 'initialize_system' from 'multimodal_rag_system' (unknown location)
+[2025-04-26T18:02:56.276+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_integration.py
+[2025-04-26T18:02:56.318+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_integration.py took 0.221 seconds
